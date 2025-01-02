@@ -1,0 +1,35 @@
+base_url = "https://tharuniyer.me"
+title = "Tharun's Blog"
+description = "Personal blog of Tharun Iyer"
+author = "Tharun Iyer"
+theme = "kita"
+default_language = "en"
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+
+taxonomies = [{ name = "tags", rss = true, paginate_by = 5 }]
+
+[markdown]
+highlight_code = true
+highlight_theme = "base16-ocean-dark"
+
+[extra]
+math = false
+mermaid = false
+comment = false
+
+[extra.profile]
+name = "Tharun Iyer"
+bio = "Write your short bio here"
+# You can add an avatar image later
+
+[[extra.menu]]
+name = "Posts"
+url = "/posts"
+
+[[extra.menu]]
+name = "About"
+url = "$BASE_URL/pages/about"
+
+[extra.footer]
+since = 2025
